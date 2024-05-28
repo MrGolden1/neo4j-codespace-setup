@@ -1,0 +1,12 @@
+
+{
+  "name": "Neo4j",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "neo4j",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [7474, 7687],
+  "postCreateCommand": "docker-compose up -d"
+}
